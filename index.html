@@ -9,24 +9,19 @@
   <!-- <video autoplay="autoplay" muted loop playsinline>
     <source src="swim.MP4" type="video/mp4" />
 </video> -->
-
+<body>
 
 <video class="inlinevideo" autoplay loop muted playsinline>
   <source src="swim.MP4" type="video/mp4">
 </video>
 
-<!-- <video id="vid" width="320" height="240" autoplay="autoplay" loop="loop" muted="muted" controls playsinline> 
-  <source src="swim.MP4" type="video/mp4"> 
-  </video> -->
-
-<script>
-  document.getElementById('vid').play();
-</script>
+</body>
 
 <script>
 					//PLAYS VIDEO IN LOW POWER MODE
+$('video').addClass('inlinevideo');
 $('body').on('click touchstart', function ()  {var videoElement = document.getElementsByClassName('inlinevideo');if (videoElement.playing) {} else {$('.inlinevideo').trigger('play');}});
-
+</script>
 
 </script>
 
